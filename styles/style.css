@@ -58,7 +58,7 @@ nav ul{
 }
 */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
 body {
     background-color: tan;
     }
@@ -99,7 +99,7 @@ a {
 .equation h1{
     
     display: inline;
-    padding: 20px;
+    font-size: 20px;
 }
 
 .answer-options{
