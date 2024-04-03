@@ -1,48 +1,76 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-    background-color: lightblue;
-    }
-    }
 
 body{
     font-family:'Luckiest Guy';
     background-color: #e6e6ea;
 }
 
-.container{
-    
-    padding: 30px;
-    overflow: hidden;
+/*header {
+    width: 100%;
     background-color: #fe4a49;
+  
+}
+*/
+.Wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fe4a49;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
 }
 
-.container h1{
-    float: left;
+h1{
     color: white;
+    text-align: center;
+    font-size: 30px;
 }
 
-.container ul{
-    width: 20%;
+li{
     list-style-type: none;
     font-size: 20px;
-    margin-left: 40%;
 }
 
-.container li{
-    margin-top: 10px;
-    
-    padding: 0 20px 0 20px;
+ul{
+    display: flex;
+    gap: 2rem;
 }
 
-.container a{
+/*.Wrap{
+    margin-left: 50px;
+    display: inline-flex;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    padding: 30px;
+}
+
+nav ul{
+    margin-left: 50%;
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+*/
+
+@media screen and (max-width: 1080px){
+body {
+    background-color: tan;
+    }
+ul{
+    display: block;
+    float: left;
+}
+}
+
+a {
     text-decoration: none;
     color: white;
-
 }
 
 .current a::after{
@@ -54,47 +82,47 @@ body{
 
 .wrapper{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 2fr 1fr;
 }
 
 .equation{
     
-    font-size: 40px;
+    font-size: 20px;
     background-color: white;
-    border-radius: 3px;
+    border-radius: 5px;
     text-align: center;
-    padding-top: 15%;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-top: 50px;
+    
+ 
 }
 
 .equation h1{
+    
     display: inline;
     padding: 20px;
 }
 
 .answer-options{
-    font-size: 40px;
-    margin-right: 10px;
+    font-size: 20px;
+   
 }
 
 .answer-options h1{
     cursor: pointer;
     color: whitesmoke;
     border-radius: 3px;
-    margin-top: 10px;
+    padding: 10px;
     text-align: center;
-    width: 100%;
+    
 }
 
 #option1{
-    background-color: #fe4a49;
+    background-color: #5efe49;
     transition: 1s;
 }
 
 #option1:hover{
-    color: #fe4a49;
+    color: #5efe49;
     background-color: white;
 }
 
