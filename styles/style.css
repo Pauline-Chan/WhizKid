@@ -18,11 +18,11 @@ body{
 */
 .Wrap{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     background-color: #fe4a49;
     align-items: center;
-    padding: 30px;
-    gap: 20px;
+    padding: 20px;
+    
 }
 
 h1{
@@ -38,7 +38,8 @@ li{
 
 ul{
     display: flex;
-    gap: 2rem;
+    gap: 2em;
+    text-align: left;
 }
 
 /*.Wrap{
@@ -58,21 +59,7 @@ nav ul{
 }
 */
 
-@media screen and (max-width: 768px){
-body {
-    background-color: tan;
-    }
-ul{
-    display: block;
-    float: left;
-}
 
-.equation h1{
-    font-size: 10px;
-    padding: 0;
-  
-}
-}
 a {
     text-decoration: none;
     color: white;
@@ -97,7 +84,6 @@ a {
     border-radius: 5px;
     text-align: center;
     padding-top: 50px;
-    
  
 }
 
@@ -151,3 +137,26 @@ a {
     color: #fed766;
     background-color: white;
 }
+
+@media screen and (max-width: 768px){
+    body {
+        background-color: tan;
+        }
+     
+    .Wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fe4a49;
+        align-items: center;
+        padding: 20px;    
+    }    
+    ul{
+        display: block;
+        float: left;
+    }
+    .equation h1{
+        font-size: 30px;
+        padding: 0;
+    }
+    }
+    
